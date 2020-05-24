@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/wsb-airlines/static/css/main.5f361e03.chunk.css",
-    "main.js": "/wsb-airlines/static/js/main.9e953279.chunk.js",
-    "main.js.map": "/wsb-airlines/static/js/main.9e953279.chunk.js.map",
+    "main.css": "/wsb-airlines/static/css/main.d74fcb65.chunk.css",
+    "main.js": "/wsb-airlines/static/js/main.ed282166.chunk.js",
+    "main.js.map": "/wsb-airlines/static/js/main.ed282166.chunk.js.map",
     "runtime-main.js": "/wsb-airlines/static/js/runtime-main.364bdf8d.js",
     "runtime-main.js.map": "/wsb-airlines/static/js/runtime-main.364bdf8d.js.map",
-    "static/js/2.5a3c4769.chunk.js": "/wsb-airlines/static/js/2.5a3c4769.chunk.js",
-    "static/js/2.5a3c4769.chunk.js.map": "/wsb-airlines/static/js/2.5a3c4769.chunk.js.map",
+    "static/js/2.b0ecd8d4.chunk.js": "/wsb-airlines/static/js/2.b0ecd8d4.chunk.js",
+    "static/js/2.b0ecd8d4.chunk.js.map": "/wsb-airlines/static/js/2.b0ecd8d4.chunk.js.map",
     "index.html": "/wsb-airlines/index.html",
-    "precache-manifest.aa1ad4886941af1067ee03eafc05c0ce.js": "/wsb-airlines/precache-manifest.aa1ad4886941af1067ee03eafc05c0ce.js",
+    "precache-manifest.2f73b16aa923fb101f0a0ecca81ed251.js": "/wsb-airlines/precache-manifest.2f73b16aa923fb101f0a0ecca81ed251.js",
     "service-worker.js": "/wsb-airlines/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/wsb-airlines/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.5a3c4769.chunk.js.LICENSE.txt": "/wsb-airlines/static/js/2.5a3c4769.chunk.js.LICENSE.txt"
+    "static/css/main.d74fcb65.chunk.css.map": "/wsb-airlines/static/css/main.d74fcb65.chunk.css.map",
+    "static/js/2.b0ecd8d4.chunk.js.LICENSE.txt": "/wsb-airlines/static/js/2.b0ecd8d4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.364bdf8d.js",
-    "static/js/2.5a3c4769.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.9e953279.chunk.js"
+    "static/js/2.b0ecd8d4.chunk.js",
+    "static/css/main.d74fcb65.chunk.css",
+    "static/js/main.ed282166.chunk.js"
   ]
 }

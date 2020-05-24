@@ -1,18 +1,6 @@
-import React, { useCallback } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React from "react";
 
 const Main = () => {
-  const counter = useSelector((store) => store.counter);
-  const dipatch = useDispatch();
-  const increment = useCallback(() => {
-    dipatch({ type: "INCREMENT" });
-  }, [dipatch]);
-
-  return (
-    <div>
-      halko
-      <button onClick={() => increment()}>{counter}</button>
-    </div>
-  );
+  return <div className={"container-fluid"}></div>;
 };
 export default Main;

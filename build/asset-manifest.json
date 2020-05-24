@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f361e03.chunk.css",
-    "main.js": "/static/js/main.86a4ce18.chunk.js",
-    "main.js.map": "/static/js/main.86a4ce18.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c16baf9b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c16baf9b.js.map",
-    "static/js/2.5a3c4769.chunk.js": "/static/js/2.5a3c4769.chunk.js",
-    "static/js/2.5a3c4769.chunk.js.map": "/static/js/2.5a3c4769.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.b7d61c7219b6ed8a31af107156ff4d13.js": "/precache-manifest.b7d61c7219b6ed8a31af107156ff4d13.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.5a3c4769.chunk.js.LICENSE.txt": "/static/js/2.5a3c4769.chunk.js.LICENSE.txt"
+    "main.css": "/wsb-airlines/static/css/main.5f361e03.chunk.css",
+    "main.js": "/wsb-airlines/static/js/main.9e953279.chunk.js",
+    "main.js.map": "/wsb-airlines/static/js/main.9e953279.chunk.js.map",
+    "runtime-main.js": "/wsb-airlines/static/js/runtime-main.364bdf8d.js",
+    "runtime-main.js.map": "/wsb-airlines/static/js/runtime-main.364bdf8d.js.map",
+    "static/js/2.5a3c4769.chunk.js": "/wsb-airlines/static/js/2.5a3c4769.chunk.js",
+    "static/js/2.5a3c4769.chunk.js.map": "/wsb-airlines/static/js/2.5a3c4769.chunk.js.map",
+    "index.html": "/wsb-airlines/index.html",
+    "precache-manifest.aa1ad4886941af1067ee03eafc05c0ce.js": "/wsb-airlines/precache-manifest.aa1ad4886941af1067ee03eafc05c0ce.js",
+    "service-worker.js": "/wsb-airlines/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/wsb-airlines/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.5a3c4769.chunk.js.LICENSE.txt": "/wsb-airlines/static/js/2.5a3c4769.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c16baf9b.js",
+    "static/js/runtime-main.364bdf8d.js",
     "static/js/2.5a3c4769.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.86a4ce18.chunk.js"
+    "static/js/main.9e953279.chunk.js"
   ]
 }

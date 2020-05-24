@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { setUserName } from "../../store/actionCreators";
 import styles from "./TopNavbar.module.css";
+import personCircleIcon from "../../assets/personCircle.svg";
+import xCircle from "../../assets/xCircle.svg";
 
 const TopNavbar = () => {
   const userName = useSelector((store) => store.userName);
@@ -12,6 +14,7 @@ const TopNavbar = () => {
     (userName, event) => {
       if (event) {
         event.preventDefault();
+        event.target.value = "";
       }
       dipatch(setUserName(userName));
     },
@@ -24,16 +27,26 @@ const TopNavbar = () => {
     formClasses.push(styles.show);
   }
   const userDiv = userName ? (
-    <span className={"navbar-text"}>
-      Witaj, {userName} <i onClick={() => onSetUserName(null)}>&times;</i>
-    </span>
+    <div className={"d-flex justify-content-space"}>
+      <span className={"navbar-text text-center mr-2"}>Witaj, {userName} </span>
+      <button type={"button"} className={"btn btn-outline-default"}>
+        <img
+          src={xCircle}
+          className={styles.icon}
+          alt={"close"}
+          onClick={() => onSetUserName(null)}
+        />
+      </button>
+    </div>
   ) : null;
   return (
-    <nav className={"navbar navbar-expand-sm navbar-light bg light"}>
+    <nav className={`navbar navbar-expand-sm navbar-light bg light`}>
       <NavLink to={"/"} className={"navbar-brand"} activeClassName={"active"}>
-        Strona główna
+        WSB Airlines
       </NavLink>
-      <div className={"d-flex justify-content-end w-100"}>
+      <div
+        className={`d-flex justify-content-end align-items-center w-100 ${styles.rightMenuItems}`}
+      >
         <div className={formClasses.join(" ")}>
           <form
             className={"form-inline"}
@@ -47,7 +60,11 @@ const TopNavbar = () => {
               onChange={(event) => setUNModel(event.target.value)}
             />
             <button type={"submit"} className={"btn btn-outline-default"}>
-              Ustaw usera
+              <img
+                className={styles.icon}
+                src={personCircleIcon}
+                alt={"Ustaw identyfikator"}
+              />
             </button>
           </form>
         </div>

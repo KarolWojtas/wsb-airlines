@@ -1,0 +1,8 @@
+.datePicker {
+  width: 336px;
+  overflow-x: scroll !important;
+}
+.dateCell {
+  width: 48px;
+  height: 48px;
+}

@@ -9,3 +9,9 @@
   transform: translateY(0);
   transition: transform ease-in 300ms;
 }
+.rightMenuItems {
+  min-height: 3rem;
+}
+.icon {
+  width: 1.5rem;
+}

@@ -10,6 +10,7 @@ import FlareComponent from "flare-react";
 import WsbAirlines from "./assets/WsbAirlines.flr";
 import useWindowDimensions from "./util/useWindowDimension";
 import { calcAnimationHeight } from "./util/constants";
+import styles from "./App.module.css";
 
 const store = createStore(MainReducer);
 function App() {
@@ -18,6 +19,12 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
+        <div
+          style={{ top: `${height - 50}px` }}
+          className={`${styles.headerText} pl-2`}
+        >
+          Lot w lepszą przyszłość!
+        </div>
         <FlareComponent
           width={width}
           height={height}

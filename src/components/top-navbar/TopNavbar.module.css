@@ -1,7 +1,7 @@
 .hide {
   visibility: hidden;
   transform: translateY(-150%);
-  transition: 300ms linear;
+  transition: 300ms ease-out;
   position: fixed;
 }
 .show {

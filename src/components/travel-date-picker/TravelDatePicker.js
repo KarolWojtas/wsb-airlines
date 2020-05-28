@@ -1,12 +1,13 @@
 import React, { useMemo, useState, useCallback } from "react";
 import moment from "moment";
 import styles from "./TravelDatePicker.module.css";
+import rightCircle from "../../assets/arrRightCircle.svg";
 
 const TravelDatePicker = (props) => {
-  const { startDate, onDateSelect } = props;
-  const [selDay, setSelDay] = useState(startDate.getDate());
-  const [monthNumber, setMonthNumber] = useState(startDate.getMonth() + 1);
-  const [yearNumber, setYearNumber] = useState(startDate.getFullYear());
+  const { todayDate, onDateSelect } = props;
+  const [selDate, setSelDate] = useState(todayDate);
+  const [monthNumber, setMonthNumber] = useState(todayDate.getMonth() + 1);
+  const [yearNumber, setYearNumber] = useState(todayDate.getFullYear());
   const calendar = useMemo(() => getCalendarForMonth(monthNumber, yearNumber), [
     monthNumber,
     yearNumber,
@@ -15,11 +16,12 @@ const TravelDatePicker = (props) => {
   const onSelectDate = useCallback(
     (day) => {
       if (day) {
-        setSelDay(day);
-        onDateSelect(new Date(yearNumber, monthNumber - 1, selDay));
+        const date = new Date(yearNumber, monthNumber - 1, day);
+        setSelDate(date);
+        onDateSelect(date);
       }
     },
-    [monthNumber, yearNumber, selDay, onDateSelect]
+    [monthNumber, yearNumber, onDateSelect]
   );
 
   const onNextMonth = useCallback(() => {
@@ -43,38 +45,69 @@ const TravelDatePicker = (props) => {
   // todo styling
   const calendarTemplate = calendar.map((week, weekIx) => (
     <div className={"row"} key={`week[${weekIx}]`}>
-      {week.map((day, dayIx) => (
-        <div
-          onClick={() => onSelectDate(day[0])}
-          className={`col-xs text-center ${styles.dateCell}`}
-          key={`day[${dayIx}]`}
-        >
-          {day[0] === 0 ? null : day[0]}
-        </div>
-      ))}
+      {week.map((day, dayIx) => {
+        const dayClasses = ["col-xs text-center", styles.dateCell];
+        if (
+          day[0] === todayDate.getDate() &&
+          monthNumber === todayDate.getMonth() + 1 &&
+          yearNumber === todayDate.getFullYear()
+        ) {
+          dayClasses.push(styles.today);
+        }
+        if (
+          day[0] === selDate.getDate() &&
+          monthNumber === selDate.getMonth() + 1 &&
+          yearNumber === selDate.getFullYear()
+        ) {
+          dayClasses.push(styles.selected);
+        }
+        return (
+          <div
+            className={dayClasses.join(" ")}
+            onClick={() => onSelectDate(day[0])}
+            key={`day[${dayIx}]`}
+          >
+            <p>{day[0] === 0 ? null : day[0]}</p>
+          </div>
+        );
+      })}
     </div>
   ));
   return (
     <div className={`${styles.datePicker}`}>
-      <div className="">
-        <div className={"btn-group"}>
-          <button
-            type={"button"}
-            className={"btn btn-secondary"}
-            onClick={() => onPrevMonth()}
-          >
-            Prev
-          </button>
-          <button
-            type={"button"}
-            className={"btn btn-secondary"}
-            onClick={() => onNextMonth()}
-          >
-            Next
-          </button>
-        </div>
-        <div className="ml-3">
-          {selDay} - {monthNumber} - {yearNumber}
+      <div className="container">
+        <div className="row">
+          <div className="col-6">
+            <div className="ml-3">
+              {monthNumber} - {yearNumber}
+            </div>
+            <div className={"btn-group"}>
+              <button
+                type={"button"}
+                className={"btn btn-default"}
+                onClick={() => onPrevMonth()}
+              >
+                <img
+                  src={rightCircle}
+                  style={{ transform: "rotate(-180deg)" }}
+                  alt="previous"
+                />
+              </button>
+              <button
+                type={"button"}
+                className={"btn btn-default"}
+                onClick={() => onNextMonth()}
+              >
+                <img src={rightCircle} alt="next" />
+              </button>
+            </div>
+          </div>
+          <div className="col-6">
+            <div>
+              {selDate.getDate()} - {selDate.getMonth() + 1} -{" "}
+              {selDate.getFullYear()}
+            </div>
+          </div>
         </div>
       </div>
       <div className="container mt-2">{calendarTemplate}</div>

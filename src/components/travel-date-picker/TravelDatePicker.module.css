@@ -5,4 +5,14 @@
 .dateCell {
   width: 48px;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.today {
+  border: 1px solid black;
+}
+
+.selected {
+  background-color: aliceblue;
 }

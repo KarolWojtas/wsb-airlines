@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3c30900e0a6c2ba8a13cd89eeaa5405f",
+    "revision": "84950a0c8223de432f0c2ff80d141f92",
     "url": "/wsb-airlines/index.html"
   },
   {
-    "revision": "9f76f0a1d8d67bf6e565",
+    "revision": "954f6a8363de6d9a37c6",
     "url": "/wsb-airlines/static/css/main.9b55bd6b.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wsb-airlines/static/js/2.af711fee.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9f76f0a1d8d67bf6e565",
-    "url": "/wsb-airlines/static/js/main.58578880.chunk.js"
+    "revision": "954f6a8363de6d9a37c6",
+    "url": "/wsb-airlines/static/js/main.27aa2817.chunk.js"
   },
   {
     "revision": "5b8434d109c811b28307",
     "url": "/wsb-airlines/static/js/runtime-main.364bdf8d.js"
   },
   {
-    "revision": "4e40d78c9dcf5b10b2335c1f92c36ab1",
-    "url": "/wsb-airlines/static/media/WsbAirlines.4e40d78c.flr"
+    "revision": "95dcc1b2f2e9a34768810f15ded58452",
+    "url": "/wsb-airlines/static/media/WsbAirlines.95dcc1b2.flr"
   },
   {
     "revision": "987687b8d88421064ede81f22c0c5ce5",

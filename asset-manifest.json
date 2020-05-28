@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/wsb-airlines/static/css/main.9b55bd6b.chunk.css",
-    "main.js": "/wsb-airlines/static/js/main.58578880.chunk.js",
-    "main.js.map": "/wsb-airlines/static/js/main.58578880.chunk.js.map",
+    "main.js": "/wsb-airlines/static/js/main.27aa2817.chunk.js",
+    "main.js.map": "/wsb-airlines/static/js/main.27aa2817.chunk.js.map",
     "runtime-main.js": "/wsb-airlines/static/js/runtime-main.364bdf8d.js",
     "runtime-main.js.map": "/wsb-airlines/static/js/runtime-main.364bdf8d.js.map",
     "static/js/2.af711fee.chunk.js": "/wsb-airlines/static/js/2.af711fee.chunk.js",
     "static/js/2.af711fee.chunk.js.map": "/wsb-airlines/static/js/2.af711fee.chunk.js.map",
     "index.html": "/wsb-airlines/index.html",
-    "precache-manifest.4e2ffd92d90cc66af064556c434ef57a.js": "/wsb-airlines/precache-manifest.4e2ffd92d90cc66af064556c434ef57a.js",
+    "precache-manifest.f933e27c7aa670aeb2dd29cd4f570490.js": "/wsb-airlines/precache-manifest.f933e27c7aa670aeb2dd29cd4f570490.js",
     "service-worker.js": "/wsb-airlines/service-worker.js",
     "static/css/main.9b55bd6b.chunk.css.map": "/wsb-airlines/static/css/main.9b55bd6b.chunk.css.map",
     "static/js/2.af711fee.chunk.js.LICENSE.txt": "/wsb-airlines/static/js/2.af711fee.chunk.js.LICENSE.txt",
-    "static/media/WsbAirlines.flr": "/wsb-airlines/static/media/WsbAirlines.4e40d78c.flr",
+    "static/media/WsbAirlines.flr": "/wsb-airlines/static/media/WsbAirlines.95dcc1b2.flr",
     "static/media/personCircle.svg": "/wsb-airlines/static/media/personCircle.987687b8.svg",
     "static/media/xCircle.svg": "/wsb-airlines/static/media/xCircle.ba82ea60.svg"
   },
@@ -20,6 +20,6 @@
     "static/js/runtime-main.364bdf8d.js",
     "static/js/2.af711fee.chunk.js",
     "static/css/main.9b55bd6b.chunk.css",
-    "static/js/main.58578880.chunk.js"
+    "static/js/main.27aa2817.chunk.js"
   ]
 }

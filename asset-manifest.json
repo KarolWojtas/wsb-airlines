@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/wsb-airlines/static/css/main.753f7557.chunk.css",
-    "main.js": "/wsb-airlines/static/js/main.ad8cf57b.chunk.js",
-    "main.js.map": "/wsb-airlines/static/js/main.ad8cf57b.chunk.js.map",
+    "main.js": "/wsb-airlines/static/js/main.60ed93f3.chunk.js",
+    "main.js.map": "/wsb-airlines/static/js/main.60ed93f3.chunk.js.map",
     "runtime-main.js": "/wsb-airlines/static/js/runtime-main.364bdf8d.js",
     "runtime-main.js.map": "/wsb-airlines/static/js/runtime-main.364bdf8d.js.map",
-    "static/js/2.d86a24d4.chunk.js": "/wsb-airlines/static/js/2.d86a24d4.chunk.js",
-    "static/js/2.d86a24d4.chunk.js.map": "/wsb-airlines/static/js/2.d86a24d4.chunk.js.map",
+    "static/js/2.51542cf1.chunk.js": "/wsb-airlines/static/js/2.51542cf1.chunk.js",
+    "static/js/2.51542cf1.chunk.js.map": "/wsb-airlines/static/js/2.51542cf1.chunk.js.map",
     "index.html": "/wsb-airlines/index.html",
-    "precache-manifest.b7bff55b23f04bbf982a8c4f93c66a15.js": "/wsb-airlines/precache-manifest.b7bff55b23f04bbf982a8c4f93c66a15.js",
+    "precache-manifest.58df6507ce36ee4ea5097d91ed6169c3.js": "/wsb-airlines/precache-manifest.58df6507ce36ee4ea5097d91ed6169c3.js",
     "service-worker.js": "/wsb-airlines/service-worker.js",
     "static/css/main.753f7557.chunk.css.map": "/wsb-airlines/static/css/main.753f7557.chunk.css.map",
-    "static/js/2.d86a24d4.chunk.js.LICENSE.txt": "/wsb-airlines/static/js/2.d86a24d4.chunk.js.LICENSE.txt",
-    "static/media/WsbAirlines.flr": "/wsb-airlines/static/media/WsbAirlines.95dcc1b2.flr",
+    "static/js/2.51542cf1.chunk.js.LICENSE.txt": "/wsb-airlines/static/js/2.51542cf1.chunk.js.LICENSE.txt",
+    "static/media/WsbAirlines.flr": "/wsb-airlines/static/media/WsbAirlines.0e5858c7.flr",
     "static/media/arrRightCircle.svg": "/wsb-airlines/static/media/arrRightCircle.b49ee2f4.svg",
     "static/media/personCircle.svg": "/wsb-airlines/static/media/personCircle.987687b8.svg",
     "static/media/xCircle.svg": "/wsb-airlines/static/media/xCircle.ba82ea60.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.364bdf8d.js",
-    "static/js/2.d86a24d4.chunk.js",
+    "static/js/2.51542cf1.chunk.js",
     "static/css/main.753f7557.chunk.css",
-    "static/js/main.ad8cf57b.chunk.js"
+    "static/js/main.60ed93f3.chunk.js"
   ]
 }

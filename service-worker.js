@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/wsb-airlines/precache-manifest.b7bff55b23f04bbf982a8c4f93c66a15.js"
+  "/wsb-airlines/precache-manifest.58df6507ce36ee4ea5097d91ed6169c3.js"
 );
 
 self.addEventListener('message', (event) => {

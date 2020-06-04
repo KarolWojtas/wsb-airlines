@@ -6,3 +6,17 @@ export function setUserName(userName) {
     userName,
   };
 }
+
+export function setOriginCity(name) {
+  return {
+    type: actions.SET_ORIGIN_CITY,
+    name,
+  };
+}
+
+export function setDestinationCity(name) {
+  return {
+    type: actions.SET_DESTINATION_CITY,
+    name,
+  };
+}

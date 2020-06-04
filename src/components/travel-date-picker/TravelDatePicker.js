@@ -1,7 +1,7 @@
 import React, { useMemo, useState, useCallback } from "react";
 import moment from "moment";
 import styles from "./TravelDatePicker.module.css";
-import rightCircle from "../../assets/arrRightCircle.svg";
+import arrowRight from "../../assets/arrRight.svg";
 
 const TravelDatePicker = (props) => {
   const { todayDate, onDateSelect } = props;
@@ -74,39 +74,41 @@ const TravelDatePicker = (props) => {
     </div>
   ));
   return (
-    <div className={`${styles.datePicker}`}>
-      <div className="container">
+    <div className={`${styles.datePicker} border-bottom`}>
+      <div className="container bg-light rounded-top border pb-2">
         <div className="row">
           <div className="col-6">
-            <div className="ml-3">
+            <div>
               {monthNumber} - {yearNumber}
             </div>
-            <div className={"btn-group"}>
+            <div className="btn-group">
               <button
-                type={"button"}
-                className={"btn btn-default"}
+                type="button"
+                className="btn btn-outline-primary btn-sm"
                 onClick={() => onPrevMonth()}
               >
-                <img
-                  src={rightCircle}
-                  style={{ transform: "rotate(-180deg)" }}
-                  alt="previous"
-                />
+                <div className="d-flex justify-content-center align-items-center">
+                  <img
+                    src={arrowRight}
+                    style={{ transform: "rotate(-180deg)" }}
+                    alt="previous"
+                  />
+                </div>
               </button>
               <button
-                type={"button"}
-                className={"btn btn-default"}
+                type="button"
+                className="btn btn-outline-primary btn-sm"
                 onClick={() => onNextMonth()}
               >
-                <img src={rightCircle} alt="next" />
+                <div className="d-flex justify-content-center align-items-center">
+                  <img src={arrowRight} alt="next" />
+                </div>
               </button>
             </div>
           </div>
-          <div className="col-6">
-            <div>
-              {selDate.getDate()} - {selDate.getMonth() + 1} -{" "}
-              {selDate.getFullYear()}
-            </div>
+          <div className="col-6 text-right">
+            {selDate.getDate()} - {selDate.getMonth() + 1} -{" "}
+            {selDate.getFullYear()}
           </div>
         </div>
       </div>

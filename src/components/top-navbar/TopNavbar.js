@@ -1,10 +1,13 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useState, useMemo } from "react";
 import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { setUserName } from "../../store/actionCreators";
 import styles from "./TopNavbar.module.css";
 import personCircleIcon from "../../assets/personCircle.svg";
 import xCircle from "../../assets/xCircle.svg";
+import useWindowDimensions from "../../util/useWindowDimension";
+import { calcAnimationHeight } from "../../util/constants";
+import useScrollTop from "../../util/useScrollTop";
 
 const TopNavbar = () => {
   const userName = useSelector((store) => store.userName);
@@ -39,8 +42,18 @@ const TopNavbar = () => {
       </button>
     </div>
   ) : null;
+  // the same as in App.js but whatever
+  const { width } = useWindowDimensions();
+  const height = useMemo(() => calcAnimationHeight(width), [width]);
+  const navBarClasses = ["navbar navbar-expand-sm fixed-top navbar-light"];
+  const scrollTop = useScrollTop();
+
+  // if scrolled past animation, change navbar background to bg-light
+  if (height < scrollTop) {
+    navBarClasses.push("bg-light");
+  }
   return (
-    <nav className={`navbar navbar-expand-sm navbar-light bg light`}>
+    <nav className={navBarClasses.join(" ")}>
       <NavLink to={"/"} className={"navbar-brand"} activeClassName={"active"}>
         WSB Airlines
       </NavLink>

@@ -1276,7 +1276,11 @@
 								[
 									{
 										"time": 0,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 0.8908123970031738
 									},
 									{
@@ -1286,12 +1290,20 @@
 									},
 									{
 										"time": 5.033333333333333,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 0.9412074089050293
 									},
 									{
 										"time": 10,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 0.8908123970031738
 									}
 								]
@@ -1300,7 +1312,11 @@
 								[
 									{
 										"time": 0,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 1.0022072792053223
 									},
 									{
@@ -1310,12 +1326,20 @@
 									},
 									{
 										"time": 5.033333333333333,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 1.1407934427261353
 									},
 									{
 										"time": 10,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 1.0022072792053223
 									}
 								]
@@ -1327,17 +1351,29 @@
 								[
 									{
 										"time": 0,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 1.0970814228057861
 									},
 									{
 										"time": 5.016666666666667,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 0.8081545233726501
 									},
 									{
 										"time": 10,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 1.0970814228057861
 									}
 								]
@@ -1346,17 +1382,29 @@
 								[
 									{
 										"time": 0,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 1.1597514152526855
 									},
 									{
 										"time": 5.016666666666667,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 1.2431321144104004
 									},
 									{
 										"time": 10,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 1.1597514152526855
 									}
 								]
@@ -1378,7 +1426,11 @@
 									},
 									{
 										"time": 10,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 1
 									}
 								]
@@ -1397,7 +1449,11 @@
 									},
 									{
 										"time": 10,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 1
 									}
 								]
@@ -1419,7 +1475,11 @@
 									},
 									{
 										"time": 10,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 0
 									}
 								]
@@ -1445,7 +1505,11 @@
 									},
 									{
 										"time": 10,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": -240.02842712402344
 									}
 								]
@@ -1459,7 +1523,11 @@
 									},
 									{
 										"time": 10,
-										"interpolatorType": 1,
+										"interpolatorType": 2,
+										"cubicX1": 0.42,
+										"cubicY1": 0,
+										"cubicX2": 0.58,
+										"cubicY2": 1,
 										"value": 317.06414794921875
 									}
 								]

@@ -77,10 +77,16 @@ const TravelDatePicker = (props) => {
     <div className={`${styles.datePicker} border-bottom`}>
       <div className="container bg-light rounded-top border pb-2">
         <div className="row">
+          <div className="col" style={{ fontSize: "1.2rem" }}>
+            {selDate.getDate()} - {selDate.getMonth() + 1} -{" "}
+            {selDate.getFullYear()}
+          </div>
+        </div>
+        <div className="row">
           <div className="col-6">
-            <div>
-              {monthNumber} - {yearNumber}
-            </div>
+            {monthNumber} - {yearNumber}
+          </div>
+          <div className="col-6 text-right">
             <div className="btn-group">
               <button
                 type="button"
@@ -105,10 +111,6 @@ const TravelDatePicker = (props) => {
                 </div>
               </button>
             </div>
-          </div>
-          <div className="col-6 text-right">
-            {selDate.getDate()} - {selDate.getMonth() + 1} -{" "}
-            {selDate.getFullYear()}
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ import xCircle from "../../assets/xCircle.svg";
 import useWindowDimensions from "../../util/useWindowDimension";
 import { calcAnimationHeight } from "../../util/constants";
 import useScrollTop from "../../util/useScrollTop";
+import menuImg from "../../assets/menu_open.svg";
 
 const TopNavbar = () => {
   const userName = useSelector((store) => store.userName);
@@ -57,31 +58,43 @@ const TopNavbar = () => {
       <NavLink to={"/"} className={"navbar-brand"} activeClassName={"active"}>
         WSB Airlines
       </NavLink>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#idFormRoot"
+      >
+        <img src={menuImg} alt="menu" />
+      </button>
       <div
         className={`d-flex justify-content-end align-items-center w-100 ${styles.rightMenuItems}`}
       >
-        <div className={formClasses.join(" ")}>
-          <form
-            className={"form-inline"}
-            action={null}
-            onSubmit={(e) => onSetUserName(unModel, e)}
+        <div>
+          <div
+            className={`collapse navbar-collapse ${formClasses.join(" ")}`}
+            id="idFormRoot"
           >
-            <input
-              value={unModel}
-              className={"form-control mr-2"}
-              placeholder={"Wpisz identyfikator"}
-              onChange={(event) => setUNModel(event.target.value)}
-            />
-            <button type={"submit"} className={"btn btn-outline-default"}>
-              <img
-                className={styles.icon}
-                src={personCircleIcon}
-                alt={"Ustaw identyfikator"}
+            <form
+              className="form-inline my-2 my-lg-0"
+              onSubmit={(e) => onSetUserName(unModel, e)}
+            >
+              <button type="submit" className="btn btn-outline-default">
+                <img
+                  className={styles.icon}
+                  src={personCircleIcon}
+                  alt="Ustaw identyfikator"
+                />
+              </button>
+              <input
+                value={unModel}
+                className={"form-control mr-2"}
+                placeholder={"Wpisz identyfikator"}
+                onChange={(event) => setUNModel(event.target.value)}
               />
-            </button>
-          </form>
+            </form>
+          </div>
+          {userDiv}
         </div>
-        {userDiv}
       </div>
     </nav>
   );

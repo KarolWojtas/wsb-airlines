@@ -9,7 +9,7 @@ const DestinationPicker = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     setOriginCities(cities);
-    const [_, ...rest] = cities;
+    const [, ...rest] = cities;
     setDestCities(rest);
   }, [cities]);
   const setCity = useCallback(
@@ -17,8 +17,6 @@ const DestinationPicker = () => {
       dispatch(isOrigin ? setOriginCity(name) : setDestinationCity(name));
       if (isOrigin) {
         setDestCities(cities.filter((city) => city.name !== name));
-      } else {
-        setOriginCities(cities.filter((city) => city.name !== name));
       }
     },
     [dispatch, cities]
@@ -30,7 +28,7 @@ const DestinationPicker = () => {
           <h5 className="card-title">Wybierz trasę przelotu</h5>
           <form>
             <div className="row">
-              <div className="col-sm-6">
+              <div className="col-lg-6">
                 <div className="form-group row">
                   <label className="col-md-3 col-form-label ">Skąd?</label>
                   <div className="col-md-9">
@@ -39,13 +37,15 @@ const DestinationPicker = () => {
                       onChange={({ target }) => setCity(target.value, true)}
                     >
                       {originCities.map((city) => (
-                        <option value={city.name}>{city.name}</option>
+                        <option key={city.name} value={city.name}>
+                          {city.name}
+                        </option>
                       ))}
                     </select>
                   </div>
                 </div>
               </div>
-              <div className="col-sm-6">
+              <div className="col-lg-6">
                 <div className="form-group row">
                   <label className="col-md-3 col-form-label ">Dokąd?</label>
                   <div className="col-md-9">
@@ -55,7 +55,9 @@ const DestinationPicker = () => {
                       onChange={({ target }) => setCity(target.value, false)}
                     >
                       {destCities.map((city) => (
-                        <option value={city.name}>{city.name}</option>
+                        <option key={city.name} value={city.name}>
+                          {city.name}
+                        </option>
                       ))}
                     </select>
                   </div>

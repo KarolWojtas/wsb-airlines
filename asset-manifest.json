@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/wsb-airlines/static/css/main.14aa78d2.chunk.css",
-    "main.js": "/wsb-airlines/static/js/main.ce2951cf.chunk.js",
-    "main.js.map": "/wsb-airlines/static/js/main.ce2951cf.chunk.js.map",
+    "main.css": "/wsb-airlines/static/css/main.0c6defb9.chunk.css",
+    "main.js": "/wsb-airlines/static/js/main.917b9258.chunk.js",
+    "main.js.map": "/wsb-airlines/static/js/main.917b9258.chunk.js.map",
     "runtime-main.js": "/wsb-airlines/static/js/runtime-main.364bdf8d.js",
     "runtime-main.js.map": "/wsb-airlines/static/js/runtime-main.364bdf8d.js.map",
-    "static/js/2.6bc79440.chunk.js": "/wsb-airlines/static/js/2.6bc79440.chunk.js",
-    "static/js/2.6bc79440.chunk.js.map": "/wsb-airlines/static/js/2.6bc79440.chunk.js.map",
+    "static/js/2.ca3e6fc5.chunk.js": "/wsb-airlines/static/js/2.ca3e6fc5.chunk.js",
+    "static/js/2.ca3e6fc5.chunk.js.map": "/wsb-airlines/static/js/2.ca3e6fc5.chunk.js.map",
     "index.html": "/wsb-airlines/index.html",
-    "precache-manifest.b653a545d718b6c514661f3e7b5c04b2.js": "/wsb-airlines/precache-manifest.b653a545d718b6c514661f3e7b5c04b2.js",
+    "precache-manifest.218cbb825e26e28ce9a9662d4216b2ec.js": "/wsb-airlines/precache-manifest.218cbb825e26e28ce9a9662d4216b2ec.js",
     "service-worker.js": "/wsb-airlines/service-worker.js",
-    "static/css/main.14aa78d2.chunk.css.map": "/wsb-airlines/static/css/main.14aa78d2.chunk.css.map",
-    "static/js/2.6bc79440.chunk.js.LICENSE.txt": "/wsb-airlines/static/js/2.6bc79440.chunk.js.LICENSE.txt",
+    "static/css/main.0c6defb9.chunk.css.map": "/wsb-airlines/static/css/main.0c6defb9.chunk.css.map",
+    "static/js/2.ca3e6fc5.chunk.js.LICENSE.txt": "/wsb-airlines/static/js/2.ca3e6fc5.chunk.js.LICENSE.txt",
     "static/media/WsbAirlines.flr": "/wsb-airlines/static/media/WsbAirlines.0e5858c7.flr",
     "static/media/arrRight.svg": "/wsb-airlines/static/media/arrRight.c8725fb6.svg",
+    "static/media/menu_open.svg": "/wsb-airlines/static/media/menu_open.db287481.svg",
     "static/media/personCircle.svg": "/wsb-airlines/static/media/personCircle.987687b8.svg",
     "static/media/xCircle.svg": "/wsb-airlines/static/media/xCircle.ba82ea60.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.364bdf8d.js",
-    "static/js/2.6bc79440.chunk.js",
-    "static/css/main.14aa78d2.chunk.css",
-    "static/js/main.ce2951cf.chunk.js"
+    "static/js/2.ca3e6fc5.chunk.js",
+    "static/css/main.0c6defb9.chunk.css",
+    "static/js/main.917b9258.chunk.js"
   ]
 }

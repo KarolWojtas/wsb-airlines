@@ -6,7 +6,7 @@ const INITIAL_STATE = {
   headAnimHeight: null,
   cities: DestinationsService.cities,
   originCity: null,
-  destCity: null,
+  destinationCity: null,
 };
 
 export default function mainReducer(state = INITIAL_STATE, action) {

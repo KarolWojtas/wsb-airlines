@@ -33,9 +33,13 @@ const DestinationPicker = () => {
                   <label className="col-md-3 col-form-label ">Skąd?</label>
                   <div className="col-md-9">
                     <select
+                      defaultValue=""
                       className="form-control"
                       onChange={({ target }) => setCity(target.value, true)}
                     >
+                      <option disabled hidden value="">
+                        -Wybierz-
+                      </option>
                       {originCities.map((city) => (
                         <option key={city.name} value={city.name}>
                           {city.name}
@@ -50,10 +54,14 @@ const DestinationPicker = () => {
                   <label className="col-md-3 col-form-label ">Dokąd?</label>
                   <div className="col-md-9">
                     <select
+                      defaultValue=""
                       className="form-control"
                       disabled={false}
                       onChange={({ target }) => setCity(target.value, false)}
                     >
+                      <option disabled hidden value="">
+                        -Wybierz-
+                      </option>
                       {destCities.map((city) => (
                         <option key={city.name} value={city.name}>
                           {city.name}

@@ -13,13 +13,13 @@ import moment from "moment";
  *
  * @param {{result: TravelResult}} props
  */
-const TravelResultItem = ({ result }) => {
-  const start = useMemo(() => moment(result.start, "x").format(), [result]);
-  const end = useMemo(() => moment(result.end, "x").format(), [result]);
+const TravelResultItem = ({ flight, from, to }) => {
+  const start = useMemo(() => moment(flight.start).format("HH:mm"), [flight]);
+  const end = useMemo(() => moment(flight.end).format("HH:mm"), [flight]);
   return (
     <div className="card">
       <div className="card-body">
-        {result.from} - {result.to}
+        {from} - {to}
       </div>
       <div className="card-footer">
         {start} - {end}

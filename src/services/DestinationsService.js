@@ -1,11 +1,7 @@
-import flightResults from "./flightResults.mock.json";
+import moment from "moment";
 
 export class DestinationsService {
   static #_cities;
-  /**
-   * {TravelResult[]}
-   */
-  static #flightResults;
 
   static get cities() {
     if (!this.#_cities) {
@@ -32,11 +28,47 @@ export class DestinationsService {
     return this.#_cities;
   }
 
-  static get flightResults() {
-    if (!this.#flightResults) {
-      this.#flightResults = flightResults;
-      Object.freeze(this.#flightResults);
+  /**
+   *
+   * @param {*} origin
+   * @param {*} destination
+   * @param {Date} date - search date, time at midnight
+   */
+  static flightResults(origin, destination, date) {
+    if (!origin || !destination || !date) {
+      return [];
     }
-    return this.#flightResults;
+    return [
+      {
+        date: moment(date).format("DD-MM-yyyy"),
+        origin,
+        destination,
+        flights: [
+          {
+            start: moment(date).hour(11).minute(30),
+            end: moment(date).hour(12).minute(0),
+          },
+          {
+            start: moment(date).hour(18).minute(30),
+            end: moment(date).hour(19).minute(0),
+          },
+        ],
+      },
+      {
+        date: moment(date).add(2, "days").format("DD-MM-yyyy"),
+        origin,
+        destination,
+        flights: [
+          {
+            start: moment(date).hour(11).minute(30),
+            end: moment(date).hour(12).minute(0),
+          },
+          {
+            start: moment(date).hour(18).minute(30),
+            end: moment(date).hour(19).minute(0),
+          },
+        ],
+      },
+    ];
   }
 }

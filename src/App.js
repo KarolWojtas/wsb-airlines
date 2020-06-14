@@ -8,6 +8,7 @@ import WsbAirlines from "./assets/WsbAirlines.flr";
 import useWindowDimensions from "./util/useWindowDimension";
 import { calcAnimationHeight } from "./util/constants";
 import styles from "./App.module.css";
+import Services from "./containers/Services";
 
 function App() {
   const { width } = useWindowDimensions();
@@ -27,9 +28,17 @@ function App() {
         file={WsbAirlines}
       ></FlareComponent>
       <TopNavbar></TopNavbar>
-      <Switch>
-        <Route component={Main} path={"/"} />
-      </Switch>
+      <div className={styles.content}>
+        <Switch>
+          <Route path={"/services"}>
+            <Services />
+          </Route>
+          <Route path={"/"}>
+            <Main />
+          </Route>
+        </Switch>
+      </div>
+      <div className={styles.footer}>ogarnąc footer</div>
     </Router>
   );
 }

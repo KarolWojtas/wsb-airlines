@@ -3,29 +3,51 @@
   color: black;
   font-family: "Courgette", cursive;
 }
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 768px) {
   .headerText {
     font-size: 2.5rem;
   }
+  .content {
+    padding-bottom: 6rem;
+  }
+  .footer {
+    height: 6rem;
+  }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 765px) {
   .headerText {
     font-size: 1.5rem;
   }
+  .content {
+    padding-bottom: 6rem;
+  }
+  .footer {
+    height: 6rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .content {
+    padding-bottom: 8.5rem;
+  }
+  .footer {
+    height: 8rem;
+  }
+}
+.root {
+  min-height: 100vh !important;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 .content {
-  height: auto;
+  padding-bottom: auto;
 }
 .footer {
-  height: 80px;
+  height: auto;
   clear: both;
   background-color: #eee;
   position: absolute;
   bottom: 0;
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 16px 0 16px;
 }

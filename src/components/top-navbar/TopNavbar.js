@@ -119,7 +119,7 @@ const TopNavbar = () => {
               >
                 <div className="form-group">
                   <div className="col-sm-5">
-                    <label for="loginInput" className="mr-sm-2 my-1">
+                    <label htmlFor="loginInput" className="mr-sm-2 my-1">
                       Login
                     </label>
                   </div>
@@ -127,15 +127,15 @@ const TopNavbar = () => {
                     <input
                       id="loginInput"
                       value={unModel}
-                      className={"form-control"}
-                      placeholder={"Wpisz identyfikator"}
+                      className="form-control"
+                      placeholder="Wpisz identyfikator"
                       onChange={(event) => setUNModel(event.target.value)}
                     />
                   </div>
                 </div>
                 <div className="form-group mt-sm-2">
                   <div className="col-sm-5">
-                    <label for="passwordInput" className="mr-sm-2 my-1">
+                    <label htmlFor="passwordInput" className="mr-sm-2 my-1">
                       Hasło
                     </label>
                   </div>

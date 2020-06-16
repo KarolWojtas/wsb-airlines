@@ -24,7 +24,7 @@ const DestinationPicker = () => {
   return (
     <div className="container-fluid">
       <div className="card border-0">
-        <div className="card-body">
+        <div className="card-body px-0">
           <h5 className="card-title">Wybierz trasę przelotu</h5>
           <form>
             <div className="row">

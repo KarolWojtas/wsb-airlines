@@ -15,7 +15,7 @@ function App() {
   const height = useMemo(() => calcAnimationHeight(width), [width]);
   return (
     <div className={styles.root}>
-      <Router>
+      <Router basename="/wsb-airlines">
         <div className="container-fluid">
           <div
             style={{ top: `${height - 50}px` }}

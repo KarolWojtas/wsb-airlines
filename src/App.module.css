@@ -26,7 +26,7 @@
     height: 6rem;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   .content {
     padding-bottom: 8.5rem;
   }

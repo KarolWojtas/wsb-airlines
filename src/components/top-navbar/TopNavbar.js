@@ -42,12 +42,13 @@ const TopNavbar = () => {
   ) : (
     // eslint-disable-next-line jsx-a11y/anchor-is-valid
     <a
+      style={{ cursor: "pointer" }}
       data-toggle="modal"
       data-target="#loginModal"
       className="d-flex justify-content-space"
     >
       <img
-        className={`${styles.icon} mr-1`}
+        className={`${styles.icon} mr-1 d-block`}
         src={personCircleIcon}
         alt="Ustaw identyfikator"
       />
@@ -60,8 +61,8 @@ const TopNavbar = () => {
   const navBarClasses = ["navbar navbar-expand-sm fixed-top navbar-light"];
   const scrollTop = useScrollTop();
 
-  // if scrolled past animation, change navbar background to bg-light
-  if (height < scrollTop) {
+  // if scrolled past animation, change navbar background to bg-light, compensate for navbar height
+  if (height < scrollTop + 80) {
     navBarClasses.push("bg-light");
   }
   return (
@@ -83,7 +84,9 @@ const TopNavbar = () => {
         >
           <div>
             <div className="collapse navbar-collapse" id="mainMenu">
-              <ul className="navbar-nav">
+              <ul
+                className={`navbar-nav ${styles.navbarDropdown} rounded-bottom rounded-left`}
+              >
                 <li className="nav-item mr-2">
                   <NavLink
                     to="/"

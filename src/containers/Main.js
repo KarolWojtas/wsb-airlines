@@ -21,13 +21,14 @@ const Main = () => {
             onDateSelect={(date) => setSelectedDate(date)}
           />
         </div>
-        <div className="col-lg-7 col-md-12">
+        <div className="col-lg-7 col-md-12 mb-2">
           <TravelResultList
             date={selectedDate}
             origin={origin}
             destination={destination}
           />
         </div>
+        <div className="col-12"></div>
       </div>
     </div>
   );

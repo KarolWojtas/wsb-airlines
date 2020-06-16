@@ -22,6 +22,10 @@ export class DestinationsService {
           name: "Sosnowiec",
           code: "SO",
         },
+        {
+          name: "Konin",
+          code: "PK",
+        },
       ];
       Object.freeze(this.#_cities);
     }
@@ -66,6 +70,17 @@ export class DestinationsService {
           {
             start: moment(date).hour(18).minute(30),
             end: moment(date).hour(19).minute(0),
+          },
+        ],
+      },
+      {
+        date: moment(date).add(3, "days").format("DD-MM-yyyy"),
+        origin,
+        destination,
+        flights: [
+          {
+            start: moment(date).hour(21).minute(50),
+            end: moment(date).hour(23).minute(0),
           },
         ],
       },

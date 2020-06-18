@@ -1,27 +1,30 @@
 {
   "files": {
-    "main.css": "/wsb-airlines/static/css/main.4932db6c.chunk.css",
-    "main.js": "/wsb-airlines/static/js/main.5adbbf63.chunk.js",
-    "main.js.map": "/wsb-airlines/static/js/main.5adbbf63.chunk.js.map",
+    "main.css": "/wsb-airlines/static/css/main.fd0bea3e.chunk.css",
+    "main.js": "/wsb-airlines/static/js/main.68fb5e25.chunk.js",
+    "main.js.map": "/wsb-airlines/static/js/main.68fb5e25.chunk.js.map",
     "runtime-main.js": "/wsb-airlines/static/js/runtime-main.364bdf8d.js",
     "runtime-main.js.map": "/wsb-airlines/static/js/runtime-main.364bdf8d.js.map",
-    "static/js/2.f7a67afa.chunk.js": "/wsb-airlines/static/js/2.f7a67afa.chunk.js",
-    "static/js/2.f7a67afa.chunk.js.map": "/wsb-airlines/static/js/2.f7a67afa.chunk.js.map",
+    "static/js/2.d2103046.chunk.js": "/wsb-airlines/static/js/2.d2103046.chunk.js",
+    "static/js/2.d2103046.chunk.js.map": "/wsb-airlines/static/js/2.d2103046.chunk.js.map",
     "index.html": "/wsb-airlines/index.html",
-    "precache-manifest.41b49824b993df3016ebbf79862e3162.js": "/wsb-airlines/precache-manifest.41b49824b993df3016ebbf79862e3162.js",
+    "precache-manifest.c45bd3188ace65e2fd90c426e7d9cd53.js": "/wsb-airlines/precache-manifest.c45bd3188ace65e2fd90c426e7d9cd53.js",
     "service-worker.js": "/wsb-airlines/service-worker.js",
-    "static/css/main.4932db6c.chunk.css.map": "/wsb-airlines/static/css/main.4932db6c.chunk.css.map",
-    "static/js/2.f7a67afa.chunk.js.LICENSE.txt": "/wsb-airlines/static/js/2.f7a67afa.chunk.js.LICENSE.txt",
+    "static/css/main.fd0bea3e.chunk.css.map": "/wsb-airlines/static/css/main.fd0bea3e.chunk.css.map",
+    "static/js/2.d2103046.chunk.js.LICENSE.txt": "/wsb-airlines/static/js/2.d2103046.chunk.js.LICENSE.txt",
     "static/media/WsbAirlines.flr": "/wsb-airlines/static/media/WsbAirlines.0e5858c7.flr",
+    "static/media/airport.jpg": "/wsb-airlines/static/media/airport.4f2bfca9.jpg",
     "static/media/arrRight.svg": "/wsb-airlines/static/media/arrRight.c8725fb6.svg",
+    "static/media/hotel.jpg": "/wsb-airlines/static/media/hotel.54bad788.jpg",
     "static/media/menu_open.svg": "/wsb-airlines/static/media/menu_open.db287481.svg",
     "static/media/personCircle.svg": "/wsb-airlines/static/media/personCircle.987687b8.svg",
+    "static/media/underground-parking.jpg": "/wsb-airlines/static/media/underground-parking.c44be0df.jpg",
     "static/media/xCircle.svg": "/wsb-airlines/static/media/xCircle.ba82ea60.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.364bdf8d.js",
-    "static/js/2.f7a67afa.chunk.js",
-    "static/css/main.4932db6c.chunk.css",
-    "static/js/main.5adbbf63.chunk.js"
+    "static/js/2.d2103046.chunk.js",
+    "static/css/main.fd0bea3e.chunk.css",
+    "static/js/main.68fb5e25.chunk.js"
   ]
 }

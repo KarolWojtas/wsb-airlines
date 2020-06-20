@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "69672d93f40c68947681f3d48486c99a",
+    "revision": "e7e282fee57d05890b849ed74b2fc137",
     "url": "/wsb-airlines/index.html"
   },
   {
-    "revision": "852e217cb7414f2bc0f5",
+    "revision": "7bec74d4daf9bc54e53f",
     "url": "/wsb-airlines/static/css/main.d939a021.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wsb-airlines/static/js/2.4fa7eecd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "852e217cb7414f2bc0f5",
-    "url": "/wsb-airlines/static/js/main.e15858e8.chunk.js"
+    "revision": "7bec74d4daf9bc54e53f",
+    "url": "/wsb-airlines/static/js/main.03e0175d.chunk.js"
   },
   {
     "revision": "5b8434d109c811b28307",

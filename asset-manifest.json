@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/wsb-airlines/static/css/main.d939a021.chunk.css",
-    "main.js": "/wsb-airlines/static/js/main.e15858e8.chunk.js",
-    "main.js.map": "/wsb-airlines/static/js/main.e15858e8.chunk.js.map",
+    "main.js": "/wsb-airlines/static/js/main.03e0175d.chunk.js",
+    "main.js.map": "/wsb-airlines/static/js/main.03e0175d.chunk.js.map",
     "runtime-main.js": "/wsb-airlines/static/js/runtime-main.364bdf8d.js",
     "runtime-main.js.map": "/wsb-airlines/static/js/runtime-main.364bdf8d.js.map",
     "static/js/2.4fa7eecd.chunk.js": "/wsb-airlines/static/js/2.4fa7eecd.chunk.js",
     "static/js/2.4fa7eecd.chunk.js.map": "/wsb-airlines/static/js/2.4fa7eecd.chunk.js.map",
     "index.html": "/wsb-airlines/index.html",
-    "precache-manifest.78055b1eb7c13775de3e7818a9ba3cee.js": "/wsb-airlines/precache-manifest.78055b1eb7c13775de3e7818a9ba3cee.js",
+    "precache-manifest.c6aafa6ca8100665a1397ef3b36dfcf5.js": "/wsb-airlines/precache-manifest.c6aafa6ca8100665a1397ef3b36dfcf5.js",
     "service-worker.js": "/wsb-airlines/service-worker.js",
     "static/css/main.d939a021.chunk.css.map": "/wsb-airlines/static/css/main.d939a021.chunk.css.map",
     "static/js/2.4fa7eecd.chunk.js.LICENSE.txt": "/wsb-airlines/static/js/2.4fa7eecd.chunk.js.LICENSE.txt",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.364bdf8d.js",
     "static/js/2.4fa7eecd.chunk.js",
     "static/css/main.d939a021.chunk.css",
-    "static/js/main.e15858e8.chunk.js"
+    "static/js/main.03e0175d.chunk.js"
   ]
 }

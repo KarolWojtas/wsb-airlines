@@ -26,9 +26,9 @@ const Services = () => {
   }, []);
   return <div className="container">
     <div className="row my-2">
-      {services.map(service => <div className="col-lg-4">
+      {services.map(service => <div className="col-lg-4" key={service.title}>
         <div className="card my-2">
-          <svg class="card-img-top"
+          <svg className="card-img-top"
             viewBox="0 0 100 100"
             style={{
               backgroundImage: `url(${service.img})`, backgroundRepeat: 'no-repeat',
@@ -46,7 +46,7 @@ const Services = () => {
 
           <div className={`card-body text-left ${styles.cardBody}`}>
             <p className="card-text">{service.text}</p>
-            <button href="#" class="btn btn-outline-secondary" disabled>Wykup</button>
+            <button href="#" className="btn btn-outline-secondary" disabled>Wykup</button>
           </div>
         </div>
       </div>)}

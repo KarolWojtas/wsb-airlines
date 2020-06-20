@@ -11,7 +11,11 @@ const DestinationPicker = () => {
     setOriginCities(cities);
     const [, ...rest] = cities;
     setDestCities(rest);
-  }, [cities]);
+    return () => {
+      dispatch(setOriginCity(null))
+      dispatch(setDestinationCity(null))
+    }
+  }, [cities, dispatch]);
   const setCity = useCallback(
     (name, isOrigin) => {
       dispatch(isOrigin ? setOriginCity(name) : setDestinationCity(name));

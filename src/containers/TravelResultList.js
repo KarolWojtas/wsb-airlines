@@ -8,11 +8,12 @@ const TravelResultList = ({ date, origin, destination }) => {
     setFlightResults(
       DestinationsService.flightResults(origin, destination, date)
     );
+    return () => setFlightResults(null);
   }, [date, origin, destination]);
   return (
     <div className="container mt-2">
       {flightResults.length === 0 ? null : (
-        <div className="row" style={{ height: "2rem" }}>
+        <div className="row mb-2" style={{ height: "2rem" }}>
           <div className="col">
             <Fragment>
               <a
@@ -43,7 +44,7 @@ const TravelResultList = ({ date, origin, destination }) => {
           </div>
         </div>
       )}
-      <div id="flightResults" className="carousel slide" data-ride="false">
+      <div id="flightResults" className="carousel slide" data-ride="carousel" data-interval="false">
         <div className="carousel-inner">
           {flightResults.length ? null : (
             <div className="carousel-item active">

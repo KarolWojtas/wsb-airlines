@@ -40,21 +40,21 @@ const TopNavbar = () => {
       </button>
     </a>
   ) : (
-    // eslint-disable-next-line jsx-a11y/anchor-is-valid
-    <a
-      style={{ cursor: "pointer" }}
-      data-toggle="modal"
-      data-target="#loginModal"
-      className="d-flex justify-content-space"
-    >
-      <img
-        className={`${styles.icon} mr-1 d-block`}
-        src={personCircleIcon}
-        alt="Ustaw identyfikator"
-      />
-      <span>Zaloguj</span>
-    </a>
-  );
+      // eslint-disable-next-line jsx-a11y/anchor-is-valid
+      <a
+        style={{ cursor: "pointer" }}
+        data-toggle="modal"
+        data-target="#loginModal"
+        className="d-flex justify-content-space"
+      >
+        <img
+          className={`${styles.icon} mr-1 d-block`}
+          src={personCircleIcon}
+          alt="Ustaw identyfikator"
+        />
+        <span>Zaloguj</span>
+      </a>
+    );
   // the same as in App.js but whatever
   const { width } = useWindowDimensions();
   const height = useMemo(() => calcAnimationHeight(width), [width]);
@@ -68,7 +68,7 @@ const TopNavbar = () => {
   return (
     <Fragment>
       <nav className={navBarClasses.join(" ")}>
-        <NavLink to={"/"} className={"navbar-brand"} activeClassName={"active"}>
+        <NavLink to={"/"} className={"navbar-brand"} exact activeClassName={"active"}>
           WSB Airlines
         </NavLink>
         <button

@@ -2,9 +2,9 @@
     width: '100%';
     background-size: 'cover'; 
     background-repeat: 'no-repeat';
-     background-position-x: 'center';
+     background-position: 'center';
 }
 .cardBody{
     background: rgb(255,255,255);
-    background: linear-gradient(11deg, rgba(255,255,255,1) 0%, rgba(255,228,141,1) 80%);
+    background: linear-gradient(40deg, rgba(255,255,255,1) 0%, rgba(255,228,141,1) 95%);
 }
